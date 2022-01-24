@@ -7,7 +7,7 @@ const EmployeeTable = () => {
     const [employees, setEmployees] = useState({blogs: []})
     useEffect(() => {
         const fetchEmployeesList = async() => {
-            const {data} = await axios("http://dummy.restapiexample.com/api/v1/employees")
+            const {data} = await axios("https://dummy.restapiexample.com/api/v1/employees")
             
             setEmployees({blogs: data})
             console.log(data)
